@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
   <persistence-unit name="ProjetoPU" transaction-type="RESOURCE_LOCAL">
-<<<<<<< ae6ade20d0d8a20af195cf705d7ac5222879979e
-    <class>entidades.Tarefa</class>
-=======
     <class>entidades.Produto</class>
->>>>>>> Primeira Entrega
     <exclude-unlisted-classes>false</exclude-unlisted-classes>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/aulaweb"/>

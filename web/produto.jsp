@@ -5,7 +5,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Produtos</title>
         <script src='resources/js/bootstrap.min.js'></script>
         <link rel="stylesheet" type="text/css" href="resources/css/bootstrap.min.css">
     </head>
@@ -70,17 +70,17 @@
                         List<Produto> lista;
                         lista = (List<Produto>) request.getAttribute("lista");
                     %>
-                    <% for (Produto c : lista) {%>
+                    <% for (Produto p : lista) {%>
                     <tr>
-                        <td><%= c.getProduto()%></td>
-                        <td><%= c.getMarca()%></td>
-                        <td><%= c.getQuantidade()%></td>
-                        <td><%= c.getValor()%></td>
+                        <td><%= p.getProduto()%></td>
+                        <td><%= p.getMarca()%></td>
+                        <td><%= p.getQuantidade()%></td>
+                        <td><%= p.getValor()%></td>
                         <td>
-                            <a href="produto?editar=<%= c.getId()%>">
+                            <a href="produto?editar=<%= p.getId()%>">
                                 <button class="btn btn-primary">Editar</button>
                             </a>
-                            <a href="produto?excluir=<%= c.getId()%>">
+                            <a href="produto?excluir=<%= p.getId()%>">
                                 <button class="btn btn-danger">Excluir</button>
                             </a>
                         </td>

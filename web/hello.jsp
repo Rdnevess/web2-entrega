@@ -31,12 +31,12 @@
                 </tr>
             </thead>
             <tbody>
-                <% for (Produto c : lista) {%>
+                <% for (Produto p : lista) {%>
                 <tr>
-                    <td><%= c.getProduto() %></td>
-                    <td><%= c.getMarca() %></td>
-                    <td><%= c.getQuantidade() %></td>
-                    <td><%= c.getValor() %></td>
+                    <td><%= p.getProduto() %></td>
+                    <td><%= p.getMarca() %></td>
+                    <td><%= p.getQuantidade() %></td>
+                    <td><%= p.getValor() %></td>
                 </tr>
                 <%}%>
             </tbody>
